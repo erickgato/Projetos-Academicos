@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gera valores</title>
+</head>
+<body>
+    <div id="pais">
+
+
+    </div>
+    <script type="text/javascript">
+    function NumeroAleatorio(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function randomiza(n) {
+				var ranNum = Math.round(Math.random()*n);
+				return ranNum;
+			}
+			
+			function mod(dividendo,divisor) {
+				return Math.round(dividendo - (Math.floor(dividendo/divisor)*divisor));
+			}
+			
+			function gerarCPF() {
+          comPontos = true; 
+          
+          var n = 9;
+          var n1 = randomiza(n);
+          var n2 = randomiza(n);
+          var n3 = randomiza(n);
+          var n4 = randomiza(n);
+          var n5 = randomiza(n);
+          var n6 = randomiza(n);
+          var n7 = randomiza(n);
+          var n8 = randomiza(n);
+          var n9 = randomiza(n);
+          var d1 = n9*2+n8*3+n7*4+n6*5+n5*6+n4*7+n3*8+n2*9+n1*10;
+          d1 = 11 - ( mod(d1,11) );
+          if (d1>=10) d1 = 0;
+          var d2 = d1*2+n9*3+n8*4+n7*5+n6*6+n5*7+n4*8+n3*9+n2*10+n1*11;
+          d2 = 11 - ( mod(d2,11) );
+          if (d2>=10) d2 = 0;
+          retorno = '';
+          if (comPontos) cpf = ''+n1+n2+n3+'.'+n4+n5+n6+'.'+n7+n8+n9+'-'+d1+d2;
+          else cpf = ''+n1+n2+n3+n4+n5+n6+n7+n8+n9+d1+d2;
+        
+          return cpf;
+		   }
+            function gerarRG(){
+                  c1 = NumeroAleatorio(01,20);
+                  c2 = NumeroAleatorio(100,399);
+                  c3 = NumeroAleatorio(100,399);
+                  c4 = NumeroAleatorio(1,9);
+                  var rg = '' + c1 + c2 +c3 + ' - ' + c4;
+                  return rg; 
+            }
+            function geraDataNascimento(anoinicio,anofim){
+                  ano = NumeroAleatorio(anoinicio,anofim);
+                  mes = NumeroAleatorio(01,12);
+                  if(mes == 02) dia = NumeroAleatorio(01,28);
+                  else dia =  NumeroAleatorio(30,31);
+                  var data = '' + ano + '-' + mes + '-' + dia; 
+                  return data
+
+            }
+            function gerarTelefone(ddd){
+                  var n1 = NumeroAleatorio(1,9);
+                  var n2 = NumeroAleatorio(1,9);
+                  var n3 = NumeroAleatorio(1,9);
+                  var n4 = NumeroAleatorio(1,9);
+
+                  var n5 = NumeroAleatorio(1,9);
+                  var n6 = NumeroAleatorio(1,9);
+                  var n7 = NumeroAleatorio(1,9);
+                  var n8 = NumeroAleatorio(1,9);
+                  var telefone = "(" + ddd + ") " + n1+n2+n3+n4 + "-" + n5+n6+n7+n8;
+                  return telefone;
+ 
+            }
+            function GeraNomePorArray(indice){
+                  var nomes ="hebe heber hector hedila heidi heitor helcilena helder helem helen helena helenice helenira heleno helga heliane heliayrton helida helio helisa hellen helmut heloisa heloiza helton helvia henri henrique henriqueta henry heraclio herald herbert hercilia herculano hercules herenilda herica hewelyn hianne higor hilana hilbert hilda hildegard hildo hilma hilton hiolly homero horacio horishi hortensia hosana hudson hugo humberto ialode iamni iane iani iara iascara iasmig iasmim icaro idalina idenise idimar ieda iemanja igaro ignacio ignes igor ilda ilma ilsa ilsamar ilton ilza ilzani inacio indra ines inez ingrid ingride iolanda iona ionaria ione ionilda iony iracema iraciara iracilda iranice irece irene iria katia katianny katiline katiucia katiuscia katury katy katya kaue kauline keider keiko keila keith kelen keli kelle kellen kelli kelly kelson kelvin kely kenia kennia kesia kesianne kessia kethelin kethura ketlyn kezi kezia khalil kharina kim kin kleber kleryston kleyze krisna kristal kyoko laecio laercio laerte laila lailah lair lais laisa laise laiza lana lanah lanuza lanuzia lara larisa larissa larize larusca laryssa lastenia lateefah latifa latiffa lauane laudicea laura laurita lauro lauryvone lavinia lavnis layane layla lays lazaro lea leandra leandro leci leda ledio leia leide leidiane leila leilah leilane leir lelia leni lenice lenildo lenise lenita lenon lenora leo leon leona leonardo leonel leonidas leonidio leonnardo leonor leonora leopoldo leslaynne leticia letizia levecy levi leyde li lia liana liane licilda lidia lidiana lidiane lidina lidnes lidson lien liene ligia ligiane lila lilia liliam lilian liliana liliane lilianne liliany lina linalva lincoln linda lindinaldo lindinalva lindomar lindsay linete linette lineu lioneli lis lisa lisandra lisandro lise lislei lisnaise lissia livania live liverson livia liviane livio liza lizandra lizandro lizia liziane liziomar locerdi loize loja lola lolita lorelei lorena lorenna lorenzo loreta lorinete lorrana louhani louise lourdes lourdyanna lourenco lourival luan luana luanda luane luanna luara luca lucas luceli lucelia lucenildo luci lucia luciana luciane lucianete luciano luciara luciene lucila luciledacampelo lucileia lucilene lucimar lucimara lucimeire lucimere lucimilia lucineia lucineide lucio lucivaldo lucivania lucy lucymara ludemila ludmila ludmilla ludymila luicilia luigi luis luisa luise luiz luiza luna lurbia lurdes lusiene lusinalva lusinete luzia luziane luziario luzilene luzinete luzirene lydia lynn lysianne mabel maciel madalena madiha";
+                  let nomesArray = nomes.split(" ");
+                  var tamanho = nomesArray.lenght;
+                  console.log(tamanho);
+                  return nomesArray[indice];
+
+            }
+            function GeraSobrenome(indice){
+              var sobrenomes = "GONÇALVES LIMA LOPES MACHADO MARQUES MARTINS MEDEIROS MELO MENDES MIRANDA MONTEIRO MORAES MOREIRA MOURA NASCIMENTO NUNES OLIVEIRA PEREIRA RAMOS REIS RIBEIRO ROCHA SANTANA SANTOS SILVA SOARES SOUZA TEIXEIRA VIEIRA ";
+              const sobrenomesArray = sobrenomes.split(" ");
+              return sobrenomesArray[indice];
+               }
+               function GeraBairrosReaisSJP(indice){
+                 //Esta funcao facilita na criacao de tabelas com nomes de bairros
+                  var bairros = "Academia AfonsoPena ÁguasBelas ÁreaInstitucional Aeroportuária Aristocrata Arujá Aviação BarroPreto BomJesus BonecadoIguaçu BordadoCampo Cachoeira CampinadoTaquaral CampoLargodaRoseira Centro CidadeJardim ColôniaRioGrande Contenda Costeira Cristal Cruzeiro DelRey DomRodrigo Guatupê Iná Ipê Itália Jurema Miringuava Murici OuroFino ParquedaFonte PedroMoro Quissisana RioPequeno RoseiradeSãoSebastião SantoAntônio SãoCristovão SãoDomingos SãoMarcos SãoPedro Zacarias";
+                  const bairroArray = bairros.split(" ");
+                  var tamanho = bairroArray.lenght;
+                  console.log(tamanho);
+                  return bairroArray[indice];
+               }
+               function geraplacaCarro(){
+                  let letras = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
+                  let letrasaleatorio = letras.split(" ");
+                  function letrasrand(letinicial,letfinal){
+                        for(let percorre = 0;percorre <= 26;percorre++){
+                              if(letrasaleatorio[percorre] == "" + letinicial){
+                                    codinicial = percorre;
+                              }
+                              if(letrasaleatorio[percorre] == "" + letfinal){
+                                    codfinal = percorre;
+                              }
+                        }
+                        var letraal = letrasaleatorio[NumeroAleatorio(codinicial,codfinal)];
+                        return letraal;
+                  }
+                  let l1,l2,l3,n1,l4,n2,n3;
+                  l1 = letrasrand('A','Z');
+                  l2 = letrasrand('A','Z');
+                  l3 = letrasrand('A','Z');
+                  n1 = NumeroAleatorio(1,9);
+                  l4 = letrasrand('A','Z');
+                  n2 = NumeroAleatorio(1,9);
+                  n3 = NumeroAleatorio(1,9);
+                  let placa = "" + l1  + "" + l2  + "" + l3  + ""  + n1  + "" + l4 + ""  + n2 + "" + n3;
+                  return placa;
+               }
+    let elemento = document.getElementById('pais'); 
+    var email = Array("hotmal","outlook","Gmail","Ovni");
+    for(var imprimeTela = 310 ;imprimeTela <= 1000; imprimeTela ++ ){
+        elemento.innerHTML += "<br/>("; 
+        elemento.innerHTML += "" + geraplacaCarro(); 
+        elemento.innerHTML += "  "  + "  );<br/>";
+
+        
+      }
+/*
+Elementos para tabelas
+inicio: elemento.innerHTML += "<br/>INSERT INTO  aluno values (' ', ";
+meio: elemento.innerHTML += " ' " + (funcao) +  " ', " ; (repita varias vezes pela sua quantidade de tabelas)
+fim: elemento.innerHTML += "  "  + "  );<br/>";
+*/
+    </script>
+</body>
+</html>
