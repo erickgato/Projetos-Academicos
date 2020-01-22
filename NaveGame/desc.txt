@@ -1,0 +1,1 @@
+Este jogo foi feito puramente em javascript.
