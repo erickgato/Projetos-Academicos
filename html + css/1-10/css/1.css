@@ -1,0 +1,19 @@
+.prsimples{
+  font-size: 10px;
+  font-family: cursive;
+}
+.centralizdo{
+text-align: center;
+font-family: italic;
+
+}
+.direita{
+  text-align: right;
+  background-color: red;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+}

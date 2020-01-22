@@ -1,0 +1,29 @@
+html,body{
+  margin: 0px;
+   height: 100%;
+}
+.primeira{
+  height: 100px;
+  width: 200px;
+  background-color: black;
+  opacity: 1;
+
+}
+.segunda{
+  background-color: blue;
+  opacity: 0.9;
+  width: 200px;
+  height: 100px;
+  margin-top: 0px;
+}
+.terceira{
+  background-color: red;
+  opacity: 0.8;
+  width: 200px;
+  height: 100px;
+
+}
+p{
+  font-size: 20pt;
+  line-height: 20pt;
+}

@@ -1,0 +1,28 @@
+body{
+  margin: 0px;
+  font-size: 10pt;
+  font-family: arial;
+  color: white;
+  background-color: black;
+}
+.tab1{
+  border: 2px solid blue;
+  border-collapse: collapse;
+}
+ .tab1 td{
+   width: 90pt;
+   height: 30pt;
+   border-style: 1px solid blue;
+
+}
+.tab2{
+  border: 2px solid red;
+
+}
+.tab2 td{
+  border: 1px solid blue;
+  width: 90pt;
+  height: 30pt;
+  padding-right: 4pt;
+  padding-left: 4pt;
+}

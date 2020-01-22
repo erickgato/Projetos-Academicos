@@ -1,0 +1,31 @@
+html,body{height: 100%;
+}
+body{
+background-image: url(../images/fundoex2.jpg);
+margin: 0px;
+padding: 0px;
+font-size: 20pt;
+}
+p{
+  line-height: 20pt;
+  color: white;
+  font-size: 20pt;
+}
+header{
+  opacity: 0.8;
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color:white;
+  height: 50px;
+}
+.cab{
+  font-size: 20pt;
+}
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  color: white
+}

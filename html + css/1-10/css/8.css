@@ -1,0 +1,22 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+input{
+  background-color: black;
+}
+input:hover{
+  background-color: blue;
+color: #000;
+}
+input:focus {
+    background-color: gold;
+    color: #000;
+}
+input:active {
+    background-color: red;
+    color: #000;
+}
+header{
+  text-align: center;
+}
